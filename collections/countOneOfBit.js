@@ -5,18 +5,18 @@ function countOneOfBit(num) {
 	}).length;
 }
 
-function countOneOfBit(num) {
+function countOneOfBit1(num) {
 	var count = 0;
-	while(num > 0 ===1) {
+	while(num > 0) {
 		if(num & 1) {
 			count++;
 		}
 		num = num >> 1;
 	}
-	return num;
+	return count;
 }
 
-const countOneOfBit = function countOneOfBit(num){
+const countOneOfBit2 = function countOneOfBit2(num){
     let count = 0;
     for (count =0; num; ++c){
         num &= (num -1) ; // 清除最低位的1
