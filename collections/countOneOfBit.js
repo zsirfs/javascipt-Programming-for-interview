@@ -18,7 +18,7 @@ function countOneOfBit1(num) {
 
 const countOneOfBit2 = function countOneOfBit2(num){
     let count = 0;
-    for (count =0; num; ++c){
+    for (count =0; num; ++count){
         num &= (num -1) ; // 清除最低位的1
     }
     return count ;
